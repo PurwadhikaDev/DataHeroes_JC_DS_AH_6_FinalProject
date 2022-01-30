@@ -140,7 +140,7 @@ Output Data yang dihasilkan Adalah
   
   ## 5. MACHINE LEARNING MODELLING
 
-Total ada `13 jenis model` yang kami eksplorasi untuk proyek ini (`9 Model Regresi` + `3 Model Clustering` + `1 Model Time Series`). 13 Model tersebut di-apply kepada `2 jenis property` yaitu `Property Rumah` dan `Property Condominium` sehingga `Total ada 26 Model` dalam proyek inni.
+Total ada `13 jenis model` yang kami eksplorasi untuk proyek ini (`9 Model Regresi` + `3 Model Clustering` + `1 Model Time Series`). 13 Model tersebut di-apply kepada `2 jenis property` yaitu `Property Rumah` dan `Property Condominium` sehingga `Total ada 26 Model` dalam proyek ini.
 
 * `Regresi` untuk menghasilkan 2 model prediksi harga: Model Prediksi Harga Rumah dan Model Prediksi Harga Condominium
     - Mendapatkan analisis data DC Properties untuk mengetahui Prediksi Harga Properties di Wasington DC

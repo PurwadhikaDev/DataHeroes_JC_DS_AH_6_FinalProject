@@ -142,7 +142,7 @@ Output Data yang dihasilkan Adalah
 
 
 
-* `Regresi` 
+* `Regresi` untuk menghasilkan 2 model prediksi harga: Model Prediksi Harga Rumah dan Model Prediksi Harga Condominium
     - Mendapatkan analisis data DC Properties untuk mengetahui Prediksi Harga Properties di Wasington DC
         1.	OLS
         2.	Linear Regression
@@ -154,7 +154,7 @@ Output Data yang dihasilkan Adalah
         8.	SVM
         9.	Ridge
 
-*  `Clustering`
+*  `Clustering` untuk menghasilkan 2 model clustering resiko: Model Resiko Rumah dan Model Resiko Condominium
     - menghitung resiko prosesntase harga jual (dipilih fitur yang kita perkirakan menjadi resiko menggunakan bisnis understanding)
     - Mendapatkan analisis tentang pemetaan resiko dari harga jual di setiap wilayah
         1.	KMeans
@@ -162,7 +162,7 @@ Output Data yang dihasilkan Adalah
         3.	Gaussian mixture model (GMM)
 
 
-* `Time series` 
+* `Time series` untuk menghasilkan 2 model tren harga: Tren kenaikan harga rumah dan Tren kenaikan harga condominium
     - Mengetahui trend harga rumah
         1.	Dekomposisi Tren
 

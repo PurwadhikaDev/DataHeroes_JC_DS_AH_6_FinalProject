@@ -5,7 +5,7 @@ by
 - Shafwan Hanif (shafwanh17@gmail.com) 
 
 # DC Properties
-*dataset di download langsung dari website ```DC Properties``` di* https://www.kaggle.com/christophercorrea/dc-residential-properties
+*dataset ```DC Properties``` di download langsung dari website* https://www.kaggle.com/christophercorrea/dc-residential-properties
 
 ## WORKFLOW PROCESS
 
@@ -49,12 +49,12 @@ Dalam data `DC_Properties` akan di lakukan EDA dengan 2 kelompok data `SOURCE`, 
 
 ### Data Dictionary
 
-* 	BATHRM	: 	"Number of Full Bathrooms"
+* 	BATHRM	    : 	"Number of Full Bathrooms"
 * 	HF_BATHRM	: 	Number of Half Bathrooms (no bathtub or shower)
-* 	HEAT	: 	Heating
-* 	AC	: 	Cooling
+* 	HEAT	    : 	Heating
+* 	AC	        : 	Cooling
 * 	NUM_UNITS	: 	Number of Units
-* 	ROOMS	: 	Number of Rooms
+* 	ROOMS	    : 	Number of Rooms
 * 	BEDRM	: 	Number of Bedrooms
 * 	AYB	: 	The earliest time the main portion of the building was built
 * 	YR_RMDL	: 	Year structure was remodeled
@@ -123,12 +123,12 @@ Beberapa step yang akan di lakukan adalah:
 Output Data yang dihasilkan Adalah
 - Residensial
     1. Residensial for Reggresion `('Data/DC_Prop_Residential_Regression.csv')`
-    2. Residensial for Clustering `('Data/DC_Prop_Residential1.csv')`
-    3. Residensial for Time Serie `('Data/DC_Prop_Residential2.csv')`
+    2. Residensial for Clustering `('Data/DC_Prop_Residential_Clustering.csv')`
+    3. Residensial for Time Series `('Data/DC_Prop_Residential_Time Series.csv')`
 - Condominium
     1. Condominium for Reggresion `('Data/DC_Prop_Condominium_Regression.csv')`
-    2. Condominium for Clustering `('Data/DC_Prop_Condominium1.csv')`
-    3. Condominium for Time Serie `('Data/DC_Prop_Condominium2.csv')`
+    2. Condominium for Clustering `('Data/DC_Prop_Condominium_Clustering.csv')`
+    3. Condominium for Time Series `('Data/DC_Prop_Condominium_Time Series.csv')`
     
     
   
@@ -139,20 +139,21 @@ Output Data yang dihasilkan Adalah
 * `Regresi` 
     - Mendapatkan analisis data DC Properties untuk mengetahui Prediksi Harga Properties di Wasington DC
         1.	OLS
-        2.	AutoML 🡪 TPOT
-        3.	Linear Regresion
-        4.	Regularisasi (Ridge / Lasso)
-        5.	KNN
-        6.	SVM
-        7.	RF
-        8.	Adaboost
+        2.	Linear Regression
+        3.	DecisionTreeRegressor
+        4.	Random Forest
+        5.	Adaboost Decision Tree
+        6.	XGB Regressor
+        7.	KNN
+        8.	SVM
+        9.	Ridge
 
 *  `Clustering`
     - menghitung resiko prosesntase harga jual (dipilih fitur yang kita perkirakan menjadi resiko menggunakan bisnis understanding)
     - Mendapatkan analisis tentang pemetaan resiko dari harga jual di setiap wilayah
         1.	KMeans
         2.	Agglomerative
-        3.	DBScan
+        3.	Gaussian mixture model (GMM)
 
 
 * `Time series` 

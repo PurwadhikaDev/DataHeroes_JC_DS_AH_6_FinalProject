@@ -14,27 +14,33 @@ by
 
 ## 1. BUSINESS PROBLEMS
 
-Bisnis Properti merupakan salah satu bisnis yang dengan resiko yang cukup tinggi. Ketika membeli suatu properti untuk dijual dalam jangka waktu yang cepat, para Pebisnis haruslah mengetahui Harga Wajar dari Properti yang akan di beli.
-Harga wajar tersebut pada dasarnya dapat di diketahui apabila Pebisnis mempunyai:
-1. Prediksi Harga
-2. Pemetaan Resiko 
-3. Tren Harga
+Kami adalah pebisnis Start Up bernama `AYH Inc` (Acquisition your House) yang bergerak di bidang jual beli rumah. `AYH Inc` memberikan alternatif solusi bagi pemilik rumah untuk menjual rumahnya dengan cepat dan mudah. Pemilik rumah dapat menjual rumahnya kepada kami untuk mendapatkan dana liquid yang cepat dibanding mengiklankannya di agency rumah ataupun online media.
 
-Dengan Machine Learning, Pebisnis dapat dengan mudah mengetahi 3 hal di atas. sehingga Pebisnis dapat membeli suatu rumah dengan harga Wajar, dan dapat menjualnya dengan Profit maksimal. serta dengan adanya ML ini,  Pebisnis dapat membuat suatu Start Up dengan Bisnis Model : `AYH Inc` (Acquisition your House). `AYH Inc` memberikan alternatif solusi bagi pemilik rumah untuk menjual rumahnya dengan cepat dan mudah. Setelah properti tersebut lolos kualifikasi, dengan ML ini Peusahaan dapat memberikan penawaran harga  akan menawarkan properti Anda kepada database Tenant `AYH Inc`.
 
-Dengan adanya ML ini, akan meminimalisih resiko dari setiap rumah yang akan dibeli oleh `AYH Inc`.
+Bisnis Properti merupakan salah satu bisnis yang dengan resiko yang cukup tinggi. Ketika kami membeli suatu properti untuk dijual kembali dalam jangka waktu yang cepat, kami haruslah mengetahui Harga Wajar dari Properti yang akan di beli untuk kemudian kami akan beli dibawah Harga Wajar tersebut berdasarkan resikonya untuk margin keuntungan kami. Selanjutnya ketika kami akan menjual harga property tersebut kami juga harus memperhatikan trend kenaikan harga property yang ada di pasar.
+
+
+Dengan Machine Learning (ML), Pebisnis dapat dengan mudah mengetahi 3 hal di atas. sehingga Pebisnis dapat membeli suatu rumah dengan harga Wajar, dan dapat menjualnya dengan Profit maksimal.Dengan adanya ML ini, kami berharap dapat meminimalisir resiko dan memaksimalkan keuntungan dari setiap rumah yang akan dibeli dan kami jual kembali.
 
 Sample Data yang yang dipakai adalah `DC Properties`, yaitu data rumah yang berada di Wasington DC. 
 
 ## 2. GOALS SETTINGS
 
+Untuk dapat menentukan harga beli dan harga jual yang tepat kami setidaknya membutuhkan beberapa hal, yaitu:
+1. Model regresi yang dapat memperkirakan harga wajar rumah di pasar
+2. Model clustering yang dapat memberikan informasi cluster resiko rumah (Rumah resiko tinggi kami akan tawar 50% harga pasar, Rumah resiko sedang 70% dan rumah resiko rendah 80 % dari harga pasar)
+3. Model time-series untuk memberikan informasi tren kenaikan harga 
+
+Kami memformulasikan keekonomian bisnis kami sebagai berikut:
+- Harga Wajar rumah yang ditawarkan kepada kami didapatkan dari hasil ML Regresi
+- Harga beli yang kami akan bayar ke penjual merukapakan formula : ```Harga beli```  = ```Hasil regresi / Harga Wajar di Pasar``` x ```Penilaian Hasil cluster resiko```
+- ```Harga Jual Rumah```  = ```Hasil regresi / Harga Wajar di Pasar``` x ```Tren Harga Rumah``` (Kami memiliki target setidaknya rumah harus laku 1 tahun sejak kami beli)
+- Margin keuntungan kami adalah ```Harga Jual Rumah``` - ```Harga beli``` atau (```Hasil regresi / Harga Wajar di Pasar``` x ```Tren Harga Rumah```) - ```Harga beli```
+
+Sehingga goals kami dalam project ini adalah:
 - Mendapatkan analisis data DC Properties untuk mengetahui Prediksi Harga Properties di Wasington DC
 - Mendapatkan analisis tentang pemetaan resiko dari harga jual di setiap wilayah
 - Mengetahui trend harga rumah
-
-OUTPUT
-- Harga Wajar       = ```Hasil regresi``` x ```Hasil cluster resiko```
-- Harga Jual Rumah  = ```Hasil Regresi``` x ```Tren Harga Rumah```
 
 ## 3. DATA UNDERSTANDING
 

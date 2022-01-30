@@ -147,7 +147,7 @@ Total ada `12 jenis model` yang kami eksplorasi untuk proyek ini (`8 Model Regre
         1.	OLS / Linear Regression
         2.	DecisionTreeRegressor
         3.	Random Forest
-        4.	Adaboost Decision Tree
+        4.	Adaboost
         5.	XGB Regressor
         6.	KNN
         7.	SVM

@@ -152,6 +152,7 @@ Total ada `12 jenis model` yang kami eksplorasi untuk proyek ini (`8 Model Regre
         6.	KNN
         7.	SVM
         8.	Ridge
+        9.	Lasso
 
 *  `Clustering` untuk menghasilkan 2 model clustering resiko: Model Resiko Rumah dan Model Resiko Condominium
     - menghitung resiko prosesntase harga jual (dipilih fitur yang kita perkirakan menjadi resiko menggunakan bisnis understanding)
